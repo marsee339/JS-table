@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Задание №2: JavaScript. Седова</title>
+
+    <script src="myjs.js"></script>
+
+    <link href="mystyle.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <p>
+        <input type="text" OnClick="TextClick(this);" OnMouseOut="TextMouseOut(this);" class="text" id="filterText" value="name: Name 1">
+        <input type="submit" OnClick="FilterClick();" class="button" value="ОК">
+    </p>
+    <br>
+    <p>
+        <script>
+            FillTable();
+        </script>
+    </p>
+    <div style="text-indent: 255px">
+        <input type="submit" OnClick="FillPage(this, p2, p3, -1, newData);" class="pageBtn" id="p1" value="1">
+        <input type="submit" OnClick="FillPage(this, p1, p3, 4, newData);" class="pageBtn" id="p2" value="2">
+        <input type="submit" OnClick="FillPage(this, p1, p2, 9, newData);" class="pageBtn" id="p3" value="3">
+    </div>
+    <script>
+        ChangePage(p1, p2, p3);
+    </script>
+</body>
+</html >
